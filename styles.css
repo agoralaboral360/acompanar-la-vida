@@ -129,3 +129,17 @@ h3{font-size:22px;margin-bottom:12px}
   .footer-grid{grid-template-columns:1fr}
   .footer-links{flex-wrap:wrap}
 }
+/* Ajustes finales */
+section[id]{scroll-margin-top:98px}
+.hero{padding-top:54px}
+h1{font-size:clamp(40px,4.75vw,58px);max-width:760px}
+.hero-grid{gap:42px}
+.hero-art{max-width:650px;margin-left:auto}
+.author-section{padding-bottom:26px}
+.contact-section{padding-top:0}
+.cover svg{height:112px}
+@media(max-width:680px){
+  section[id]{scroll-margin-top:84px}
+  h1{font-size:38px}
+  .hero{padding-top:38px}
+}
