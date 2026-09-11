@@ -1,0 +1,3 @@
+const b=document.querySelector('.menu-btn'),m=document.querySelector('#menu');if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.classList.remove('open')))}
+const checkoutLinks={'2-3':'#','3-5':'#'};
+document.querySelectorAll('[data-checkout]').forEach(a=>a.addEventListener('click',e=>{const u=checkoutLinks[a.dataset.checkout];if(!u||u==='#'){e.preventDefault();alert('Falta conectar el enlace de pago de este producto.');}else{a.href=u}}));
