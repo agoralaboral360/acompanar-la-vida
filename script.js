@@ -1,3 +1,36 @@
-const b=document.querySelector('.menu-btn'),m=document.querySelector('#menu');if(b&&m){b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o))});m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.classList.remove('open')))}
-const checkoutLinks={'2-3':'#','3-5':'#'};
-document.querySelectorAll('[data-checkout]').forEach(a=>a.addEventListener('click',e=>{const u=checkoutLinks[a.dataset.checkout];if(!u||u==='#'){e.preventDefault();alert('Falta conectar el enlace de pago de este producto.');}else{a.href=u}}));
+
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('#menu');
+
+if (menuBtn && menu) {
+  menuBtn.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  menu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+const checkoutLinks = {
+  '2-3': '#',
+  '3-5': '#'
+};
+
+document.querySelectorAll('[data-checkout]').forEach(button => {
+  button.addEventListener('click', (event) => {
+    const key = button.dataset.checkout;
+    const url = checkoutLinks[key];
+
+    if (!url || url === '#') {
+      event.preventDefault();
+      alert('Falta conectar el enlace de pago de este producto.');
+      return;
+    }
+    button.href = url;
+  });
+});
