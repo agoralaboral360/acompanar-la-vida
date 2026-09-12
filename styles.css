@@ -757,3 +757,131 @@ footer a{text-decoration:none}
     padding:34px 18px;
   }
 }
+
+
+/* =========================
+PORTADAS REALES Y PRÓXIMOS PRODUCTOS
+========================= */
+
+.real-cover{
+  padding:20px;
+  overflow:hidden;
+}
+
+.real-cover img{
+  display:block;
+  height:260px;
+  width:auto;
+  max-width:100%;
+  object-fit:contain;
+  border-radius:14px;
+  box-shadow:0 14px 28px rgba(72,72,72,.11);
+}
+
+.upcoming-cover{
+  min-height:300px;
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  padding:34px;
+  color:var(--ink);
+}
+
+.upcoming-cover > div:last-child{
+  max-width:210px;
+}
+
+.upcoming-cover small{
+  display:block;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.09em;
+  margin-bottom:8px;
+}
+
+.upcoming-cover strong{
+  display:block;
+  font-size:30px;
+  line-height:1.04;
+  margin-bottom:10px;
+}
+
+.upcoming-cover p{
+  margin:0;
+  font-size:13px;
+  font-weight:700;
+}
+
+.upcoming-visual{
+  width:58px;
+  height:58px;
+  min-width:58px;
+  border-radius:18px;
+  display:grid;
+  place-items:center;
+  background:rgba(255,255,255,.58);
+  border:1px solid rgba(72,72,72,.07);
+}
+
+.upcoming-visual svg{
+  width:28px;
+  height:28px;
+}
+
+.product-cta{
+  align-self:flex-start;
+  margin-top:auto;
+}
+
+@media(max-width:680px){
+  .real-cover img{
+    height:235px;
+  }
+
+  .upcoming-cover{
+    min-height:270px;
+    height:270px;
+    padding:28px;
+  }
+}
+
+
+/* =========================================================
+   CORRECCIÓN FINAL PORTADAS REALES DE LA COLECCIÓN
+   ========================================================= */
+
+.product-cover.real-cover{
+  height:300px !important;
+  min-height:300px !important;
+  padding:18px !important;
+  overflow:hidden !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.product-cover.real-cover img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  max-height:264px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  border-radius:16px !important;
+  box-shadow:0 12px 26px rgba(72,72,72,.10) !important;
+}
+
+@media(max-width:680px){
+  .product-cover.real-cover{
+    height:260px !important;
+    min-height:260px !important;
+    padding:16px !important;
+  }
+
+  .product-cover.real-cover img{
+    max-height:228px !important;
+  }
+}
