@@ -534,15 +534,24 @@ ETAPAS
   min-height:0;
 }
 
-.stage-grid span{
-  width:44px;
-  height:44px;
-  border-radius:13px;
-  background:var(--yellow-soft);
+.stage-icon{
+  width:48px;
+  height:48px;
+  border-radius:14px;
   display:grid;
   place-items:center;
-  font-weight:900;
   margin-bottom:14px;
+  color:var(--ink);
+}
+
+.stage-icon svg{
+  width:24px;
+  height:24px;
+}
+
+.lavender-icon{
+  background:#e8def5;
+}
 }
 
 .stage-grid h3{
