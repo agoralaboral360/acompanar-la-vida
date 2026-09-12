@@ -1044,3 +1044,26 @@ MÓVIL
 .stage-grid article .lavender-icon{
   background:#e8def5 !important;
 }
+/* IGUALAR ALTURA DE TARJETAS DE ETAPAS */
+
+.stage-grid{
+  align-items:stretch;
+}
+
+.stage-grid article{
+  height:260px;
+  display:flex;
+  flex-direction:column;
+}
+
+.stage-grid article p{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+@media(max-width:680px){
+  .stage-grid article{
+    height:auto;
+    min-height:220px;
+  }
+}
