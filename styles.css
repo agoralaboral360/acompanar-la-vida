@@ -994,3 +994,53 @@ MÓVIL
   }
 
 }
+/* CORRECCIÓN DEFINITIVA ÍCONOS ETAPAS */
+
+.stage-grid article .stage-icon{
+  width:48px !important;
+  height:48px !important;
+  min-width:48px !important;
+  min-height:48px !important;
+  max-width:48px !important;
+  max-height:48px !important;
+
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+
+  border-radius:14px !important;
+  margin:0 0 14px 0 !important;
+  padding:0 !important;
+
+  overflow:hidden !important;
+  flex:none !important;
+}
+
+.stage-grid article .stage-icon svg{
+  width:24px !important;
+  height:24px !important;
+  min-width:24px !important;
+  min-height:24px !important;
+  max-width:24px !important;
+  max-height:24px !important;
+
+  display:block !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.stage-grid article .mint-icon{
+  background:#cfe9e3 !important;
+}
+
+.stage-grid article .yellow-icon{
+  background:#f7e7a6 !important;
+}
+
+.stage-grid article .salmon-icon{
+  background:#f3c6b4 !important;
+}
+
+.stage-grid article .lavender-icon{
+  background:#e8def5 !important;
+}
