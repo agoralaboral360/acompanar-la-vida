@@ -1155,3 +1155,14 @@ MÓVIL
   line-height: 1;
   color: #3f3f46;
 }
+/* COMPACTAR PORTADAS DE LA COLECCIÓN */
+
+.mini-book{
+  aspect-ratio:auto !important;
+  min-height:300px !important;
+  height:300px !important;
+}
+
+.product-cover{
+  min-height:360px !important;
+}
